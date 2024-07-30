@@ -1,0 +1,3 @@
+python main.py train flowers --arch "vgg19" --learning_rate 0.001 --hidden_units 512 --epochs 5 --gpu
+
+python main.py predict flowers/test/1/image_06760.jpg checkpoint --top_k 5 --category_names cat_to_name.json --gpu
