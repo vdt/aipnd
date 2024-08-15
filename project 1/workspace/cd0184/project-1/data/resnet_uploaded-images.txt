@@ -1,0 +1,83 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = resnet 
+ dogfile = dognames.txt
+ black bear 
+ labrador retriever 
+ coffee mug 
+ labrador retriever 
+Filename =  Black_bear_01.jpg Pet Label =  ['black bear']
+Filename =  Labrador_Retriever_02.jpg Pet Label =  ['labrador retriever']
+Filename =  Coffee_mug_01.jpg Pet Label =  ['coffee mug']
+Filename =  Labrador_Retriever_01.jpg Pet Label =  ['labrador retriever']
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:              Black_bear_01.jpg  label:                 black bear
+ 2 key:      Labrador_Retriever_02.jpg  label:         labrador retriever
+ 3 key:              Coffee_mug_01.jpg  label:                 coffee mug
+ 4 key:      Labrador_Retriever_01.jpg  label:         labrador retriever
+
+     MATCH:
+
+             Black_bear_01.jpg: 
+Real:                 black bear   Classifier: american black bear, black bear, ursus americanus, euarctos americanus
+
+             Coffee_mug_01.jpg: 
+Real:                 coffee mug   Classifier:                     coffee mug
+
+     Labrador_Retriever_01.jpg: 
+Real:         labrador retriever   Classifier:             labrador retriever
+
+ NOT A MATCH:
+
+     Labrador_Retriever_02.jpg: 
+Real:         labrador retriever   Classifier:   ibizan hound, ibizan podenco
+
+# Total Images 4 # Matches: 3 # NOT Matches: 1
+
+     MATCH:
+
+             Black_bear_01.jpg: 
+Real:                 black bear   Classifier: american black bear, black bear, ursus americanus, euarctos americanus  
+PetLabelDog: 0  ClassLabelDog: 0
+
+             Coffee_mug_01.jpg: 
+Real:                 coffee mug   Classifier:                     coffee mug  
+PetLabelDog: 0  ClassLabelDog: 0
+
+     Labrador_Retriever_01.jpg: 
+Real:         labrador retriever   Classifier:             labrador retriever  
+PetLabelDog: 1  ClassLabelDog: 1
+
+ NOT A MATCH:
+
+     Labrador_Retriever_02.jpg: 
+Real:         labrador retriever   Classifier:   ibizan hound, ibizan podenco  
+PetLabelDog: 1  ClassLabelDog: 1
+
+# Total Images 4 # Matches: 3 # NOT Matches: 1
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  50.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  50.0
+
+
+*** Results Summary for CNN Model Architecture RESNET ***
+N Images            :   4
+N Dog Images        :   2
+N Not-Dog Images    :   2
+ 
+Percentage of Match : 75.000000
+Percentage of Correct Dogs : 100.000000
+Percentage of Correct Breed : 50.000000
+Percentage of Correct Notdogs : 100.000000
+
+INCORRECT Dog Breed Assignment:
+Real:         labrador retriever   Classifier:   ibizan hound, ibizan podenco
+
+** Total Elapsed Runtime: 0:0:7
